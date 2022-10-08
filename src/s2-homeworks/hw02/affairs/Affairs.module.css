@@ -7,6 +7,7 @@
 
 .all {
     --color: #06c;
+    margin-left: 70px;
 }
 
 .low {
@@ -54,4 +55,5 @@
     flex-wrap: wrap;
     max-width: 450px;
     margin-bottom: 73px;
+    margin-left: 70px;
 }
