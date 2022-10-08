@@ -9,16 +9,19 @@
 }
 
 .disabled {
+    color:yellow;
 }
 
 .secondary {
+    color:green;
 }
 
 .default {
-    color:red;
+    color:hotpink;
 }
 
 .red {
+    color:red
 }
 
 .default:hover {
