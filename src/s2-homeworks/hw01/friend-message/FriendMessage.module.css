@@ -5,34 +5,38 @@
 
 .friendImageAndText {
     display: flex;
+    gap:10px;
     justify-content: flex-start;
 
 }
 
 .friendImageAndText img {
-    margin-top: 40px;
-    width: 48px;
     height: 48px;
-    border-radius: 50%;
+    align-self: end;
 }
 
 .friendText {
+    border: solid 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
     margin-left: 20px;
     padding-right: 10px;
     background-color: #F5F7FB;
-    border-radius: 5px 5px 0 5px;
+    border-radius: 5px 5px 5px 0;
     color:black;
 }
 
 .friendText:after {
     content: "";
-    position: relative;
-    right:10%;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
     display: block;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(40px at top left, transparent 50%, #F5F7FB 0%);
-
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(67px at top left, transparent 50%, #F5F7FB 51%) right bottom;
 }
 
 .friendName {

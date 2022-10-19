@@ -2,6 +2,7 @@
     position: fixed;
     transition: 0.5s;
     transform: translateX(-100%);
+    z-index: 2;
 }
 
 .sidebar.open {
@@ -15,6 +16,12 @@
 }
 
 .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.3;
+    z-index: 1;
 }
 
 .nav {
