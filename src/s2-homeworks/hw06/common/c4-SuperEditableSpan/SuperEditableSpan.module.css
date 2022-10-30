@@ -1,10 +1,31 @@
 .spanBlock {
+    display: flex;
+    gap:10px;
+    width: 276px;
 }
 
 .span {
+    width: 69px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0080FF;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .input {
+    margin-left: -70px;
+    width: 276px;
+    min-width: unset;
+    padding: 8px 0 8px 24px;
+}
+.input:focus {
+
 }
 
 .pen {
