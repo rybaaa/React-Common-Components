@@ -12,9 +12,8 @@ const User: React.FC<UserPropsType> = ({ u }) => {
         <tr id={'hw8-user-' + u._id + '-' + u.age} className={s.item}>
             <td id={'hw8-user-name-' + u._id} className={s.nameCol}>
                 {u.name}
-
             </td>
-            <td id={'hw8-user-age-' + u._id}>
+            <td id={'hw8-user-age-' + u._id} className={s.ageCol}>
                 {u.age}
 
             </td>
