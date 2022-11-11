@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-hw2/static/css/main.a4408750.css",
+    "main.css": "/React-hw2/static/css/main.be52f856.css",
     "main.js": "/React-hw2/static/js/main.b933bfbb.js",
     "static/js/787.66cb4309.chunk.js": "/React-hw2/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/React-hw2/static/media/avatar.d947cb9d0d13765666b6.png",
@@ -10,12 +10,12 @@
     "static/media/checked.svg": "/React-hw2/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/React-hw2/index.html",
     "static/media/burger.svg": "/React-hw2/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.a4408750.css.map": "/React-hw2/static/css/main.a4408750.css.map",
+    "main.be52f856.css.map": "/React-hw2/static/css/main.be52f856.css.map",
     "main.b933bfbb.js.map": "/React-hw2/static/js/main.b933bfbb.js.map",
     "787.66cb4309.chunk.js.map": "/React-hw2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4408750.css",
+    "static/css/main.be52f856.css",
     "static/js/main.b933bfbb.js"
   ]
 }
