@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-hw2/static/css/main.9bc728c4.css",
-    "main.js": "/React-hw2/static/js/main.dcb78b30.js",
+    "main.css": "/React-hw2/static/css/main.a4408750.css",
+    "main.js": "/React-hw2/static/js/main.b933bfbb.js",
     "static/js/787.66cb4309.chunk.js": "/React-hw2/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/React-hw2/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/React-hw2/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
@@ -10,12 +10,12 @@
     "static/media/checked.svg": "/React-hw2/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/React-hw2/index.html",
     "static/media/burger.svg": "/React-hw2/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.9bc728c4.css.map": "/React-hw2/static/css/main.9bc728c4.css.map",
-    "main.dcb78b30.js.map": "/React-hw2/static/js/main.dcb78b30.js.map",
+    "main.a4408750.css.map": "/React-hw2/static/css/main.a4408750.css.map",
+    "main.b933bfbb.js.map": "/React-hw2/static/js/main.b933bfbb.js.map",
     "787.66cb4309.chunk.js.map": "/React-hw2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bc728c4.css",
-    "static/js/main.dcb78b30.js"
+    "static/css/main.a4408750.css",
+    "static/js/main.b933bfbb.js"
   ]
 }
