@@ -5,6 +5,7 @@ import {loadingAC} from './bll/loadingReducer'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
 import {Loader} from './Loader'
+import s from './Loader.module.css'
 
 /*
 * 1 - в файле loadingReducer.ts дописать типы и логику
@@ -36,12 +37,13 @@ const HW10 = () => {
                         <Loader/>
                     </div>
                 ) : (
-                    <SuperButton
+                    <div className={s.btn}><SuperButton
                         id={'hw10-button-start-loading'}
                         onClick={setLoading}
                     >
                         Set loading...
-                    </SuperButton>
+                    </SuperButton></div>
+
                 )}
             </div>
         </div>

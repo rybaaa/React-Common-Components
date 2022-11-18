@@ -7,6 +7,7 @@
     background: linear-gradient(white, white), conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, #512DE4 360deg);
     background-origin: border-box;
     background-clip: content-box, border-box;
+    margin: 60px 0 60px 73px;
 }
 
 @keyframes spin {
@@ -16,4 +17,8 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.btn {
+    margin: 60px;
 }

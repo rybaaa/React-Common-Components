@@ -9,5 +9,10 @@
 
 .hwTitle {
     margin: 40px auto 10px 70px;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 }
