@@ -1,8 +1,20 @@
 .container {
+    margin: 70px 0 70px 70px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 }
 
 .wrapper {
+    display: flex;
+    gap: 20px;
 }
 
 .number {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
 }
