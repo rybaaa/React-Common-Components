@@ -16,7 +16,6 @@ type ActionType = ChangeThemeIdType
 export const themeReducer = (state = initState, action: ActionType): StateType => { // fix any
     switch (action.type) {
         case "SET_THEME_ID":
-            debugger
             return {...state, themeId:action.id}
         default:
             return state
