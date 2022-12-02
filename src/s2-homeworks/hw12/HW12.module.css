@@ -24,5 +24,7 @@ html {
     border: 1px solid #323232;
     border-radius: 2px;
     margin: 70px;
-    background-color: transparent;
+    background-color: var(--background);
+    color: var(--color);
 }
+
