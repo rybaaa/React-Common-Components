@@ -55,8 +55,8 @@ const HW13 = () => {
                             ? setImage(error500)
                             : setImage(errorUnknown)
                 setCode(e.response.status ? `Ошибка ${e.response.status}` : '')
-                setText(e.response.data.errorText)
-                setInfo(e.response.data.info)
+                setText(e.response.errorText ? e.response.data.errorText: '')
+                setInfo(e.response.data.info? e.response.data.info: '')
             })
     }
     const disabledButton = info === '...loading'
