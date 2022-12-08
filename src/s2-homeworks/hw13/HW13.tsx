@@ -26,6 +26,18 @@ const HW13 = () => {
         setText(e.message)
         setInfo(e.name)
     }
+    const error400Request = (e: any) => {
+        setImage(error400)
+        setCode( `Ошибка ${e.response.status}`)
+        setText(e.response.errorText)
+        setInfo(e.response.data.info)
+    }
+    const error500Request = (e: any) => {
+        setImage(error500)
+        setCode( `Ошибка ${e.response.status}`)
+        setText(e.response.errorText)
+        setInfo(e.response.data.info)
+    }
 
     const send = (x?: boolean | null) => () => {
         const url =
@@ -50,13 +62,8 @@ const HW13 = () => {
                 e.message === 'Network Error'
                     ? errorRequest(e)
                     : e.response.status === 400
-                        ? setImage(error400)
-                        : e.response.status === 500
-                            ? setImage(error500)
-                            : setImage(errorUnknown)
-                setCode(e.response.status ? `Ошибка ${e.response.status}` : '')
-                setText(e.response.errorText ? e.response.data.errorText: '')
-                setInfo(e.response.data.info? e.response.data.info: '')
+                        ? error400Request(e)
+                        : error500Request(e)
             })
     }
     const disabledButton = info === '...loading'
