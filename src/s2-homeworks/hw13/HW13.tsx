@@ -79,7 +79,6 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         disabled={disabledButton}
-
                     >
                         Send true
                     </SuperButton>
@@ -88,7 +87,6 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         disabled={disabledButton}
-
                     >
                         Send false
                     </SuperButton>
@@ -97,7 +95,6 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         disabled={disabledButton}
-
                     >
                         Send undefined
                     </SuperButton>
@@ -106,7 +103,6 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         disabled={disabledButton}
-
                     >
                         Send null
                     </SuperButton>
