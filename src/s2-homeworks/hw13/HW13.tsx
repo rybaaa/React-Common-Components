@@ -29,13 +29,13 @@ const HW13 = () => {
     const error400Request = (e: any) => {
         setImage(error400)
         setCode( `Ошибка ${e.response.status}`)
-        setText(e.response.errorText)
+        setText(e.response.data.errorText)
         setInfo(e.response.data.info)
     }
     const error500Request = (e: any) => {
         setImage(error500)
         setCode( `Ошибка ${e.response.status}`)
-        setText(e.response.errorText)
+        setText(e.response.data.errorText)
         setInfo(e.response.data.info)
     }
 
