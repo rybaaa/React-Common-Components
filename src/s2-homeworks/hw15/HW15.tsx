@@ -81,7 +81,7 @@ const HW15 = () => {
     const onChangeSort = (newSort: string) => {
         setSort(newSort)
         setPage(1)
-        sendQuery({page:1, count:count})
+        sendQuery({page:1, count:count, sort:newSort})
         setSearchParams(newSort)
 
         // делает студент
