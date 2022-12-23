@@ -2,6 +2,8 @@ import React, {ChangeEvent} from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
+import {makeStyles} from '@material-ui/core'
+
 
 export type SuperPaginationPropsType = {
     id?: string
@@ -19,23 +21,38 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
     const lastPage = Math.ceil(totalCount / itemsCountForPage) // пишет студент // вычислить количество страниц
 
     const onChangeCallback = (event: React.ChangeEvent<unknown>, page: number) => {
-        console.log(page, itemsCountForPage)
         onChange(page, itemsCountForPage)
         // пишет студент
     }
 
     const onChangeSelect = (event: ChangeEvent<HTMLSelectElement>) => {
-        console.log(page, +event.currentTarget.value)
         onChange(page, +event.currentTarget.value)
         // пишет студент
     }
+
 
     return (
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
                 sx={{
-                    // стили для Pagination // пишет студент
+                    button: {
+                        '&:hover': {
+                            color: '#FFFFFF',
+                            backgroundColor: '#0066CC',
+                            borderRadius:'2px'
+                        }
+                    },
+                    "& .MuiPaginationItem-root.Mui-selected": {
+                        color: "white",
+                        background: "#0066CC",
+                        borderRadius:'2px',
+                        "&:hover": {
+                            color: "white",
+                            background: "#0066CC",
+                            borderRadius:'2px'
+                        },
+                    },
                 }}
                 page={page}
                 count={lastPage}
@@ -45,7 +62,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             />
 
             <span className={s.text1}>
-                показать
+                Show
             </span>
 
             <SuperSelect
@@ -57,10 +74,11 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 10, value: 10},
                 ]}
                 onChange={onChangeSelect}
+                className={s.select}
             />
 
             <span className={s.text2}>
-                строк в таблице
+                rows in table
             </span>
         </div>
     )
