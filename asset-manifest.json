@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-hw2/static/css/main.30ca4122.css",
-    "main.js": "/React-hw2/static/js/main.1f56dbd7.js",
+    "main.css": "/React-hw2/static/css/main.8c63e61f.css",
+    "main.js": "/React-hw2/static/js/main.ce474ad3.js",
     "static/js/787.66cb4309.chunk.js": "/React-hw2/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/React-hw2/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/React-hw2/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
@@ -17,12 +17,12 @@
     "static/media/noneicon.svg": "/React-hw2/static/media/noneicon.2ed591f0400e70934c8e327d91da3376.svg",
     "static/media/upicon.svg": "/React-hw2/static/media/upicon.eb137423aeb3fabd560735d55f33424d.svg",
     "static/media/downicon.svg": "/React-hw2/static/media/downicon.b83dde2202585abea08f529337397e26.svg",
-    "main.30ca4122.css.map": "/React-hw2/static/css/main.30ca4122.css.map",
-    "main.1f56dbd7.js.map": "/React-hw2/static/js/main.1f56dbd7.js.map",
+    "main.8c63e61f.css.map": "/React-hw2/static/css/main.8c63e61f.css.map",
+    "main.ce474ad3.js.map": "/React-hw2/static/js/main.ce474ad3.js.map",
     "787.66cb4309.chunk.js.map": "/React-hw2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ca4122.css",
-    "static/js/main.1f56dbd7.js"
+    "static/css/main.8c63e61f.css",
+    "static/js/main.ce474ad3.js"
   ]
 }
