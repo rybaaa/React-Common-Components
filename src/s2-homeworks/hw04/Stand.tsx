@@ -13,7 +13,6 @@ const Stand = () => {
     return (
         <div id={'hw4-stand'} className={s.stand}>
             <div className={s.inputs}>
-                {/*совместим со старым кодом:*/}
                 <div>
                     <SuperInputText
                         id={'hw4-super-input-like-old'}
@@ -21,7 +20,6 @@ const Stand = () => {
                         onChange={(e) => setValue(e.currentTarget.value)}
                     />
                 </div>
-                {/*инпут с ошибкой:*/}
                 <div>
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
@@ -85,7 +83,6 @@ const Stand = () => {
                         some text
                     </SuperCheckbox>
                 </div>
-                {/*совместим со старым кодом:*/}
                 <div>
                     <SuperCheckbox
                         id={'hw4-super-checkbox-like-old'}

@@ -2,7 +2,6 @@ import React from 'react'
 import s from './FriendMessage.module.css'
 import {MessagePropsType} from "../message/Message";
 
-// создать тип вместо any и отобразить приходящие данные
 const FriendMessage = (props: MessagePropsType) => {
     return (
         <div

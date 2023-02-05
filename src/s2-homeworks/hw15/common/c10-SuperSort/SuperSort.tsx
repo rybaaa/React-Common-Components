@@ -4,9 +4,6 @@ import upIcon from '../../assert/upicon.svg'
 import noneIcon from '../../assert/noneicon.svg'
 import s from '../../HW15.module.css'
 
-// добавить в проект иконки и импортировать
-
-
 export type SuperSortPropsType = {
     id?: string
     sort: string
@@ -25,7 +22,6 @@ export const pureChange = (sort: string, down: string, up: string) => {
         default:
             return sort = down
     }
-    // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
 }
 
 const SuperSort: React.FC<SuperSortPropsType> = (
@@ -45,7 +41,6 @@ const SuperSort: React.FC<SuperSortPropsType> = (
         : sort === up
             ? upIcon
             : noneIcon
-
 
     return (
         <span

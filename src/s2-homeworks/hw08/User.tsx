@@ -2,7 +2,6 @@ import React from 'react'
 import { UserType } from './HW8'
 import s from './HW8.module.css'
 
-// types
 type UserPropsType = {
     u: UserType
 }

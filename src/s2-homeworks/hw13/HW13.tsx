@@ -8,12 +8,6 @@ import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
 
-/*
-* 1 - дописать функцию send
-* 2 - дизэйблить кнопки пока идёт запрос
-* 3 - сделать стили в соответствии с дизайном
-* */
-
 const HW13 = () => {
     const [code, setCode] = useState('')
     const [text, setText] = useState('')

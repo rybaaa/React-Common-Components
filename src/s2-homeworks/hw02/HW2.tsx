@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
 
-// types
 export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = {
     _id: number
@@ -11,7 +10,6 @@ export type AffairType = {
 }
 export type FilterType = 'all' | AffairPriorityType
 
-// constants
 const defaultAffairs: AffairType[] = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},

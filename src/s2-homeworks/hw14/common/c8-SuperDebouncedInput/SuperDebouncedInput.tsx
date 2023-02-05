@@ -2,20 +2,16 @@ import React, {DetailedHTMLProps, InputHTMLAttributes, ReactNode, useState} from
 import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 import s from '../../HW14.module.css'
 
-// тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement>
 
-// здесь мы говорим что у нашего инпута будут такие же пропсы как у обычного инпута, кроме type
-// (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 export type SuperDebouncedInputPropsType = Omit<DefaultInputPropsType, 'type'> & {
-    // и + ещё пропсы которых нет в стандартном инпуте
     onChangeText?: (value: string) => void
     onEnter?: () => void
     error?: ReactNode
     spanClassName?: string
-} // илм экспортировать тип SuperInputTextPropsType
-    & { // плюс специальный пропс SuperPagination
+}
+    & {
     onDebouncedChange?: (value: string) => void
 }
 
@@ -24,7 +20,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
         onChangeText,
         onDebouncedChange,
 
-        ...restProps // все остальные пропсы попадут в объект restProps
+        ...restProps
     }
 ) => {
     const [timerId, setTimerId] = useState<number | undefined>(undefined)
@@ -38,13 +34,6 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
                 onDebouncedChange(value)
                 console.log('tick')
             }), 1500))
-
-            // делает студент
-
-            // остановить предыдущий таймер
-            // запустить новый на 1500ms, в котором вызовется функция
-
-            //
         }
     }
     return (

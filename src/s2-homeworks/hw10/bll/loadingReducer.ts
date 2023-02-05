@@ -2,7 +2,7 @@ const initState = {
     isLoading: false,
 }
 
-export const loadingReducer = (state = initState, action: LoadingActionType): { isLoading: boolean } => { // fix any
+export const loadingReducer = (state = initState, action: LoadingActionType): { isLoading: boolean } => {
     switch (action.type) {
         case "CHANGE_LOADING":
             return {...state, isLoading: action.isLoading}
